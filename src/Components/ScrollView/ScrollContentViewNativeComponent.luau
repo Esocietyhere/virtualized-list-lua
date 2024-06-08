@@ -39,6 +39,7 @@ function ScrollContentViewNativeComponent:render()
 		Name = "RCTScrollContentView",
 		[Change.AbsoluteSize] = self.props.onLayout,
 		Size = UDim2.new(1, 0, 1, 0),
+		BackgroundTransparency = 1,
 	}, if self.props.AutomaticSize then { AutomaticSize = self.props.AutomaticSize } else nil, styleProps)
 
 	return React.createElement("Frame", nativeProps, self.props.children)

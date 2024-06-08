@@ -117,6 +117,7 @@ function ScrollViewNativeComponent:render()
 		Name = "RCTScrollView",
 		ScrollingEnabled = if self.props.scrollEnabled ~= nil then self.props.scrollEnabled else true,
 		Size = UDim2.new(1, 0, 1, 0),
+		BackgroundTransparency = 1,
 		-- ROBLOX DEVIATION: For inverted scrolling, manually override the CanvasSize and CanvasPosition props
 		CanvasPosition = self.props.CanvasPosition,
 		CanvasSize = self.props.CanvasSize or UDim2.new(0, 0, 0, 0),
